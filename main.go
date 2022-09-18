@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/learning-go-book/simpletax"
+	"github.com/learning-go-book-2e/simpletax"
 	"github.com/shopspring/decimal"
 )
 
