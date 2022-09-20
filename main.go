@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 
 	"github.com/learning-go-book-2e/simpletax"
@@ -13,8 +14,7 @@ func main() {
 	zip := os.Args[2]
 	percent, err := simpletax.TaxForZip(zip)
 	if err != nil {
-		fmt.Println(err)
-		os.Exit(1)
+		log.Fatal(err)
 	}
 	total := amount.Add(amount.Mul(percent)).Round(2)
 	fmt.Println(total)
